@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="http://cdn.bootcss.com/iCheck/1.0.2/skins/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <link href="http://cdn.staticfile.org/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.staticfile.org/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <!--     <link href="http://cdn.bootcss.com/bootstrap-datetimepicker/4.17.45/css/bootstrap-datetimepicker.min.css" rel="stylesheet"> -->
+    <link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet"> {% block styles %} {% endblock %}
+  <script src="http://cdn.bootcss.com/iCheck/1.0.2/icheck.min.js"></script>
+<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        {% include "../../../widget/header/header.html" %} 
+            {% block content %} 
+            {% endblock %}
+            {% include "../../../widget/footer/footer.html" %} 
+    </div>
+    {% block script %} {% endblock %}
+</body>
+<script type="text/javascript">
+    
+</script>
+<!-- <script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap-datetimepicker/4.17.44/js/bootstrap-datetimepicker.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap-datetimepicker/2.1.30/js/locales/bootstrap-datetimepicker.fr.js"></script> -->
+
+</html>
